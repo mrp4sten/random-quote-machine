@@ -16,5 +16,8 @@
   },
   "eslintConfig": {
     "extends": "./node_modules/eslint-config-standard-jsx/eslintrc.json"
+  },
+  "dependencies": {
+    "axios": "^1.6.7"
   }
 }
