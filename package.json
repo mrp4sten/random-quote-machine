@@ -10,8 +10,11 @@
   "author": "Mauricio Pasten (mrp4sten)",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.56.0",
     "htmlhint": "^1.1.4",
+    "standard": "^17.1.0",
     "stylelint": "^16.2.1"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/eslint-config-standard-jsx/eslintrc.json"
   }
 }
