@@ -1,0 +1,17 @@
+{
+  "name": "random-quote-machine",
+  "version": "1.0.0",
+  "description": "This is randome quote machine generator using sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mauricio Pasten (mrp4sten)",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^16.2.1"
+  }
+}
