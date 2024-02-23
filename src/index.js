@@ -2,6 +2,7 @@ import axios from 'axios'
 
 const txtField = document.getElementById('text') // HTML div element called "text"
 const txtAuthor = document.getElementById('author') // HTML div element called "author"
+const btnNewQuote = document.getElementById('new-quote') // HTML button element called "new-quote"
 
 /**
  * A promise that resolves to an object with a quote and an author
@@ -24,7 +25,18 @@ const getQuote = async () => {
   }
 }
 
-getQuote().then(quote => {
-  txtField.innerText = quote.quote // User Story #6
-  txtAuthor.innerText = quote.author // User Story #7
-})
+/**
+ * Fills the text and author elements with the quote and author from the API
+ * @returns {void}
+ */
+const fillTextAndAuthor = () => {
+  getQuote().then(quote => {
+    txtField.innerText = quote.quote // User Story #6
+    txtAuthor.innerText = quote.author // User Story #7
+  })
+}
+
+fillTextAndAuthor()
+
+// User Story #8 & #9
+btnNewQuote.addEventListener('click', () => fillTextAndAuthor())
