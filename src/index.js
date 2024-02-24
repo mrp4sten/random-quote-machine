@@ -1,4 +1,5 @@
 import axios from 'axios'
+import './scss/style.scss'
 
 const txtField = document.getElementById('text') // HTML div element called "text"
 const txtAuthor = document.getElementById('author') // HTML div element called "author"
@@ -33,7 +34,7 @@ const getQuote = async () => {
 const fillTextAndAuthor = () => {
   getQuote().then(quote => {
     txtField.innerText = quote.quote // User Story #6
-    txtAuthor.innerText = quote.author // User Story #7
+    txtAuthor.innerText = `- ${quote.author}` // User Story #7
     lnkTweet.href =
       'https://twitter.com/intent/tweet?text=' +
         encodeURIComponent(`"${txtField.innerText}" - ${txtAuthor.innerText}`) // User Story #10
