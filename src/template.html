@@ -5,31 +5,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Random Quote Generator</title>
+  <script src="https://kit.fontawesome.com/0cb0bd032a.js" crossorigin="anonymous"></script>
   <script defer src="./dist/main.js"></script>
 </head>
 
 <body>
-  <div id="quote-box"> <!-- User Story #1 -->
-    <div id="text"></div> <!-- User Story #2 -->
-    <div id="author"></div> <!-- User Story #3 -->
-    <button id="new-quote">New Quote</button> <!-- User Story #4 -->
-    <a id="tweet-quote" target="_blank">Tweet Quote</a> <!-- User Story #5 -->
+  <div id="quote-box" class="quote"> <!-- User Story #1 -->
+    <div id="text" class="quote__text"></div> <!-- User Story #2 -->
+    <div id="author" class="quote__author"></div> <!-- User Story #3 -->
+    <div class="quote__buttons">
+      <button id="new-quote">
+        <i class="fa-solid fa-square-plus fa-2xl"></i>
+      </button> <!-- User Story #4 -->
+      <a id="tweet-quote" target="_blank">
+        <button>
+          <i class="fa-brands fa-square-x-twitter fa-2xl"></i>
+        </button>
+      </a> <!-- User Story #5 -->
+    </div>
   </div>
   <!-- _
-  \`*-.
-   )  _`-.
-  .  : `. .
-  : _   '  \
-  ; *` _.   `*-._
-  `-.-'          `-.
+    \`*-.
+    )  _`-.
+    .  : `. .
+    : _   '  \
+    ; *` _.   `*-._
+    `-.-'          `-.
     ;       `       `.
     :.       .        \
     . \  .   :   .-'   .
     '  `+.;  ;  '      :
     :  '  |    ;       ;-.
     ; '   : :`-:     _.`* ;
- .*' /  .*' ; .*`- +'  `*'
- `*-*   `*-*  `*-*' [mrp4sten was here!]-->
+    .*' /  .*' ; .*`- +'  `*'
+    `*-*   `*-*  `*-*' [mrp4sten was here!]-->
 </body>
 
 </html>
