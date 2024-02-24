@@ -1,0 +1,14 @@
+@import 'variables.scss';
+
+@mixin flex($dir, $content: center, $items: center) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $content;
+  align-items: $items;
+}
+
+@mixin media-up($breakpoint) {
+  @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}

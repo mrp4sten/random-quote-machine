@@ -1,0 +1,13 @@
+$background-img: url('../img/background.gif');
+$primary-color: #253b6e;
+$secondary-color: #1f5f8b;
+$tertiary-color: #1891ac;
+$quaternary-color: #d2ecf9;
+$honk-font: 'Honk', system-ui;
+$dancing-script-font: 'Dancing Script', cursive;
+
+$breakpoints: (
+  small: 540px,
+  medium: 768px,
+  large: 1824px,
+);
